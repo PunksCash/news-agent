@@ -11,7 +11,7 @@ import {
 
 /**
  * 
- * FluidSDK MCP Server Core
+ * SovereignSwarm SDK MCP Server Core
  * Provides tools, prompts, and resources for AI agents
  */
 export class MCPServer {
@@ -20,7 +20,7 @@ export class MCPServer {
   constructor() {
     this.server = new Server(
       {
-        name: "fluidsdk-mcp-server",
+        name: "SovereignSwarm SDK-mcp-server",
         version: "1.0.0",
       },
       {
@@ -444,7 +444,7 @@ export class MCPServer {
         article.title &&
         article.description &&
         (article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-         article.description.toLowerCase().includes(searchTerm.toLowerCase()))
+          article.description.toLowerCase().includes(searchTerm.toLowerCase()))
       );
 
       // Remove duplicates
@@ -526,8 +526,8 @@ export class MCPServer {
 
     try {
       const maxResults = Math.min(pageSize, 50);
-      let url = `https://newsapi.org/v2/everything?q=${topic||"crypto"}&apiKey=${api}`;
-      
+      let url = `https://newsapi.org/v2/everything?q=${topic || "crypto"}&apiKey=${api}`;
+
       if (topic) {
         url += `&q=${encodeURIComponent(topic)}`;
       }

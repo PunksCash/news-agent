@@ -1,6 +1,6 @@
-# FluidSDK MCP Server
+# SovereignSwarm SDK MCP Server
 
-Production-ready Model Context Protocol server for FluidSDK agents. Deploy to Vercel, AWS, or any Node.js hosting platform.
+Production-ready Model Context Protocol server for SovereignSwarm SDK agents. Deploy to Vercel, AWS, or any Node.js hosting platform.
 
 ## Features
 
@@ -53,7 +53,7 @@ Server information and capabilities overview
 
 ```json
 {
-  "name": "FluidSDK MCP Server",
+  "name": "SovereignSwarm SDK MCP Server",
   "version": "1.0.0",
   "status": "healthy",
   "endpoints": {
@@ -124,13 +124,6 @@ Main MCP protocol endpoint using Server-Sent Events (SSE)
    - Debugging assistance prompts
    - Args: `error_type`
 
-### Resources (Data Access)
-
-1. **fluidsdk://config** - Server configuration
-2. **fluidsdk://status** - Real-time server status
-3. **fluidsdk://docs/api** - API documentation
-4. **fluidsdk://docs/quickstart** - Quick start guide
-
 ## Deploy to Vercel
 
 ### Option 1: Vercel CLI
@@ -185,10 +178,10 @@ EXPOSE 3000
 CMD ["node", "dist/index.js"]
 ```
 
-## Usage with FluidSDK
+## Usage with SovereignSwarm SDK
 
 ```typescript
-import { FluidSDK } from "fluidsdk";
+import { SovereignSwarm } from "SovereignSwarm SDK";
 
 // Create agent with your deployed MCP server
 const agent = sdk.createAgent("My Agent", "Description", "image");
@@ -305,12 +298,6 @@ app.use((req, res, next) => {
   next();
 });
 ```
-
-## Support
-
-- Documentation: https://docs.fluidsdk.io
-- GitHub Issues: https://github.com/yourusername/fluidsdk
-- Discord: https://discord.gg/fluidsdk
 
 ## License
 

@@ -1,7 +1,7 @@
 {
-  "name": "fluidsdk-mcp-server",
+  "name": "SovereignSwarm SDK-mcp-server",
   "version": "1.0.0",
-  "description": "Model Context Protocol server for FluidSDK agents",
+  "description": "Model Context Protocol server for SovereignSwarm SDK agents",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {

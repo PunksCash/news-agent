@@ -1,8 +1,8 @@
 export const SERVER_CONFIG = {
-  name: "FluidSDK MCP Server",
+  name: "SovereignSwarm SDK MCP Server",
   version: "1.0.0",
   protocolVersion: "2024-11-05",
-  documentation: "https://docs.fluidsdk.io",
+  documentation: "https://docs.SovereignSwarm SDK.io",
 };
 
 export const TOOLS = {

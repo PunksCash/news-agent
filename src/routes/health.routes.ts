@@ -7,7 +7,7 @@ const router = Router();
 // Root endpoint - Server info
 router.get("/", (req: Request, res: Response) => {
   res.json({
-    name: "FluidSDK MCP Server",
+    name: "SovereignSwarm SDK MCP Server",
     version: "1.0.0",
     status: "healthy",
     paymentEnabled: isPaymentConfigured(),
