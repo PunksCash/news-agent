@@ -181,7 +181,7 @@ CMD ["node", "dist/index.js"]
 ## Usage with SovereignSwarm SDK
 
 ```typescript
-import { SovereignSwarm } from "SovereignSwarm SDK";
+import { SovereignSwarm } from "sovereign-swarm";
 
 // Create agent with your deployed MCP server
 const agent = sdk.createAgent("My Agent", "Description", "image");
